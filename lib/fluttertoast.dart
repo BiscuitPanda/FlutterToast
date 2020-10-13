@@ -32,7 +32,7 @@ class Fluttertoast {
     Toast toastLength,
     int timeInSecForIosWeb = 1,
     double fontSize,
-    ToastGravity gravity,
+    ToastGravity gravity=ToastGravity.CENTER,
     Color backgroundColor,
     Color textColor,
     bool webShowClose = false,
@@ -59,6 +59,20 @@ class Fluttertoast {
         defaultTargetPlatform == TargetPlatform.iOS) {
       backgroundColor = Colors.black;
     }
+    backgroundColor==Colors.black.withOpacity(0.7);
+
+    ///现在吐司一行字数
+//    StringBuffer sb=StringBuffer('');
+//    int lengthTextLine=10;
+//    for(int i=0;i<msg.length;i=i+lengthTextLine){
+//      ///最后一行不插入换行符
+//      if(i+lengthTextLine<msg.length){
+//        sb.writeln(msg.substring(i,i+lengthTextLine));
+//      }else{
+//        sb.write(msg.substring(i,msg.length));
+//      }
+//    }
+//    msg=sb.toString();
     if (textColor == null && defaultTargetPlatform == TargetPlatform.iOS) {
       textColor = Colors.white;
     }
