@@ -57,9 +57,9 @@ class Fluttertoast {
 
     if (backgroundColor == null &&
         defaultTargetPlatform == TargetPlatform.iOS) {
-      backgroundColor = Colors.black;
+//      backgroundColor = Colors.black;
+      backgroundColor=Colors.black.withOpacity(0.7);
     }
-    backgroundColor=Colors.black.withOpacity(0.7);
 
     ///现在吐司一行字数
 //    StringBuffer sb=StringBuffer('');
